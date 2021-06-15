@@ -6,14 +6,13 @@
 
 /* font-family: 'Major Mono Display', monospace;
 font-family: 'Poppins', sans-serif; */
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
 
 .decorative {
   font-family: 'Major Mono Display', sans-serif;
-}
-
-.main-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
 }
 
 .prose img {
