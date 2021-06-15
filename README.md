@@ -1,1 +1,1 @@
-# OH MYT BLOG!
+# OH MY BLOG!
