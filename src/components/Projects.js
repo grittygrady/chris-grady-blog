@@ -45,7 +45,7 @@ const Projects = () => {
                 key={project.slug}
                 className='relative rounded-xl shadow-xl bg-gray-900 p-8 border border-blue-400'
               >
-                <h3 className='text-pink-100 hover:text-blue-400 text-lg font-bold px-3 py-1 bg-gray-900 bg-opacity-75 rounded-t-lg'>
+                <h3 className='text-pink-100 hover:text-blue-400 text-lg font-bold py-1 bg-gray-900 bg-opacity-75 rounded-t-lg'>
                   <a
                     href={project.link}
                     alt={project.title}
@@ -72,8 +72,11 @@ const Projects = () => {
                   </p>
                   <p className='my-1 md:text-lg text-pink-100 leading-relaxed'>
                     Tags:
-                    {project.tags.map((tag) => (
-                      <span className='mx-1 px-1 bg-blue-200 text-gray-900 rounded-xl'>
+                    {project.tags.map((tag, idx) => (
+                      <span
+                        className='mx-1 px-1 bg-blue-200 text-gray-900 rounded-xl'
+                        key={idx}
+                      >
                         {tag}
                       </span>
                     ))}
@@ -82,7 +85,7 @@ const Projects = () => {
                     href={project.link}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-blue-400 hover:underline hover:text-blue-200'
+                    className='text-blue-400 hover:underline hover:text-blue-200 text-lg'
                   >
                     Check it out!
                   </a>
