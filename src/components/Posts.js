@@ -12,6 +12,8 @@ const Posts = () => {
         title,
         subtitle,
         slug,
+        tags,
+        publishedAt,
         mainImage{
           asset->{
             _id,
@@ -37,23 +39,23 @@ const Posts = () => {
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {postData &&
             postData.map((post, idx) => (
-              <article>
+              <article key={post.slug}>
                 <Link>
                   {/* <Link to={'/posts/' + post.slug.current} key={post.slug.current}> */}
                   <span
-                    className='block h-64 relative rounded-xl shadow-2xl leading-snug bg-pink-200 border-l-8 border-blue-400'
+                    className='block h-40 relative rounded-xl shadow-xl leading-snug bg-pink-200 border border-blue-400'
                     key={idx}
                   >
                     <img
                       src={post.mainImage.asset.url}
                       alt={post.mainImage.alt}
-                      className='h-full w-full rounded-r object-cover absolute'
+                      className='h-full w-full rounded object-cover absolute'
                     />
                     <span className='block relative h-full flex flex-col justify-end pr-4 pb-4'>
-                      <h3 className='text-pink-200 text-lg font-bold px-3 py-2 bg-gray-900 bg-opacity-75 rounded-t-lg'>
+                      <h3 className='text-pink-100 text-lg font-bold px-3 py-1 bg-gray-900 bg-opacity-75 rounded-t-lg'>
                         {post.title}
                       </h3>
-                      <h4 className='text-pink-200 bg-gray-900 bg-opacity-75 px-3 py-2 rounded-b-lg'>
+                      <h4 className='text-pink-100 bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
                         {post.subtitle}
                       </h4>
                     </span>

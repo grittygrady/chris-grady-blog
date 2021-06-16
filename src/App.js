@@ -5,6 +5,7 @@ import About from './components/About';
 import SinglePost from './components/SinglePost';
 import Posts from './components/Posts';
 import Projects from './components/Projects';
+// import SingleProject from './components/SingleProject';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route component={SinglePost} path='/posts/:slug' />
         <Route component={Posts} path='/posts' />
         <Route component={Projects} path='/projects' />
+        {/* <Route component={SingleProject} path='/projects/:slug' /> */}
       </Switch>
     </BrowserRouter>
   );

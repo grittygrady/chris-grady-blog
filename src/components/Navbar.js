@@ -44,6 +44,7 @@ const Navbar = () => {
           url='https://github.com/grittygrady'
           className='mr-4'
           target='_blank'
+          rel='noopener noreferrer'
           fgColor='#fce7f3'
           style={{ height: 30, width: 30 }}
         />
@@ -51,6 +52,7 @@ const Navbar = () => {
           url='https://www.instagram.com/gradythe80sbaby/'
           className='mr-4'
           target='_blank'
+          rel='noopener noreferrer'
           fgColor='#fce7f3'
           style={{ height: 30, width: 30 }}
         />
@@ -58,6 +60,7 @@ const Navbar = () => {
           url='https://www.linkedin.com/in/gradychristopher/'
           className='mr-4'
           target='_blank'
+          rel='noopener noreferrer'
           fgColor='#fce7f3'
           style={{ height: 30, width: 30 }}
         />
