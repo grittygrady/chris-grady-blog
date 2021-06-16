@@ -56,23 +56,27 @@ const Projects = () => {
                   </a>
                 </h3>
 
-                <div className='text-pink-100 text-xs space-x-4'>
-                  <br />
-                  <span>
+                <div className='text-pink-100 text-xs '>
+                  <p className='py-1'>
                     <strong className='font-bold'>Last Updated</strong>:{' '}
                     {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <br />
-                  <span>
+                  </p>
+
+                  <p className='py-1'>
                     <strong className='font-bold'>{project.subtitle}</strong>
-                  </span>
-                  <br />
-                  <span>
+                  </p>
+
+                  <p className='py-1'>
                     <strong className='font-bold'>Category</strong>:{' '}
                     {project.projectType}
-                  </span>
-                  <p className='my-3 md:text-lg text-pink-100 leading-relaxed'>
-                    {project.tags}
+                  </p>
+                  <p className='my-1 md:text-lg text-pink-100 leading-relaxed'>
+                    Tags:
+                    {project.tags.map((tag) => (
+                      <span className='mx-1 px-1 bg-blue-200 text-gray-900 rounded-xl'>
+                        {tag}
+                      </span>
+                    ))}
                   </p>
                   <a
                     href={project.link}
