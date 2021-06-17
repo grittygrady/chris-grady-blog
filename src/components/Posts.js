@@ -14,6 +14,7 @@ const Posts = () => {
         slug,
         tags,
         publishedAt,
+        categories,
         mainImage{
           asset->{
             _id,
@@ -40,8 +41,10 @@ const Posts = () => {
           {postData &&
             postData.map((post, idx) => (
               <article key={post.slug}>
-                <Link>
-                  {/* <Link to={'/posts/' + post.slug.current} key={post.slug.current}> */}
+                <Link
+                  to={'/posts/' + post.slug.current}
+                  key={post.slug.current}
+                >
                   <span
                     className='block h-40 relative rounded-xl shadow-xl leading-snug bg-pink-200 border border-blue-400'
                     key={idx}

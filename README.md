@@ -40,13 +40,24 @@ A Content Management System! I've never worked with one before, it was never tou
 
   > Yeah write about that bundle size optimization
 
+- GROQ
+
+  > Blah blah so many different knex, PostgreSQL, blah blah
+
 ## 💾 Tech Used
 
 - React / React Router
 - Sanity.io for a CMS
+- GROQ Query Language
 - TailwindCSS
 - Deployed via Netlify
 
 ## 🔮 Next Steps
 
+- Ditch the `new Date()` manner of formatting the date. Grab Momemntjs or something.
+
+- Learn more about Sanity.io in general. The way schemas are defined is quite different from the relational databases I've interacted with before. Things like "tags" and "categories" appear to be either objects or arrays (or arrays of objects 🤷🏻‍♀️?). I'd like those to display, as well as offer a method to filter to a specific category of posts. My rabid audience demands this convenience.
+
 - Integrate a system that allows for content to be shared across multiple platforms simultaneously, perhaps ITTT (If That Then This, an automation platform) will work, although I've never tried it with LinkedIn.
+
+- The Sanity.io platform currently generates a slug based upon the title of the blog post. This should really be a UUID, as I don't knw how Sanity will handle multiple identical slugs - Note to self - _Try duplicate titles._
