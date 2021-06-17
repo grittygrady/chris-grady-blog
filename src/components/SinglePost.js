@@ -62,7 +62,9 @@ const SinglePost = () => {
                   </span>
                 ))}
 
-                <p>{new Date(singlePost.publishedAt).toLocaleDateString()}</p>
+                <p className='text-sm'>
+                  {new Date(singlePost.publishedAt).toLocaleDateString()}
+                </p>
               </div>
             </div>
           </div>
@@ -73,7 +75,7 @@ const SinglePost = () => {
             style={{ height: '400px' }}
           />
         </header>
-        <div className='px-1 lg:px-48 py-1 lg:py-20 prose lg:prose-xl bg-blue-200 rounded-lg max-w-full'>
+        <div className='px-2 lg:px-48 py-2 lg:py-20 prose lg:prose-xl bg-blue-400 rounded-b border-t-2 border-gray-900 max-w-full'>
           <BlockContent
             blocks={singlePost.body}
             projectId='3t2agff2'
