@@ -30,7 +30,7 @@ A Content Management System! I've never worked with one before, it was never tou
 
 - CMS Systems
 
-  > As ridiculous as this sounds, I genuinely did not know how a client would go about updating their website - particularly a blog or e-commerce / service site. I knew there _had_ to be a way that didn't involve digging in the code, I just waasn't exposed to them anymore.
+  > As ridiculous as this sounds, I genuinely did not know how a client would go about updating their website - particularly a blog or e-commerce / service site. I knew there _had_ to be a way that didn't involve digging in the code, I just waasn't exposed to them _yet_.
 
 - Frameworks / Libraries and Mobile Design
 

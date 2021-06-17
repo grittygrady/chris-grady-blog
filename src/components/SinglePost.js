@@ -55,7 +55,7 @@ const SinglePost = () => {
               <div>
                 {singlePost.tags.map((tag, idx) => (
                   <span
-                    className='mx-1 px-1 bg-pink-400 text-xs text-gray-900 rounded-xl'
+                    className='mx-1 px-1 bg-pink-400 text-xs text-gray-900 rounded'
                     key={idx}
                   >
                     {tag}

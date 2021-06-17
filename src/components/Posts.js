@@ -46,7 +46,7 @@ const Posts = () => {
                   key={post.slug.current}
                 >
                   <span
-                    className='block h-40 relative rounded-xl shadow-xl leading-snug bg-pink-200 border border-blue-400'
+                    className='block h-40 relative rounded-xl shadow-xl leading-snug bg-pink-200 border-blue-400'
                     key={idx}
                   >
                     <img
@@ -54,13 +54,24 @@ const Posts = () => {
                       alt={post.mainImage.alt}
                       className='h-full w-full rounded object-cover absolute'
                     />
-                    <span className='block relative h-full flex flex-col justify-end pr-4 pb-4'>
+                    <span className='block relative h-full flex flex-col justify-end px-2 pb-4 mx-auto'>
                       <h3 className='text-pink-100 text-lg font-bold px-3 py-1 bg-gray-900 bg-opacity-75 rounded-t-lg'>
                         {post.title}
                       </h3>
-                      <h4 className='text-pink-100 bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
+                      <h4 className='text-pink-100 text-sm bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
                         {post.subtitle}
                       </h4>
+
+                      <div className='relative'>
+                        {post.tags.map((tag, idx) => (
+                          <span
+                            className='inline-block mx-1 my-2 p-1 bg-pink-400 text-xs text-gray-900 rounded'
+                            key={idx}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </span>
                   </span>
                 </Link>
