@@ -54,9 +54,9 @@ A Content Management System! I've never worked with one before, it was never tou
 
 ## 🔮 Next Steps
 
-- Ditch the `new Date()` manner of formatting the date. Grab Momemntjs or something.
+- Ditch the `new Date()` manner of formatting the date. Grab Moment.js or something.
 
-- Learn more about Sanity.io in general. The way schemas are defined is quite different from the relational databases I've interacted with before. Things like "tags" and "categories" appear to be either objects or arrays (or arrays of objects 🤷🏻‍♀️?). I'd like those to display, as well as offer a method to filter to a specific category of posts. My rabid audience demands this convenience.
+- Learn more about Sanity.io in general. The way schemas are defined is quite different from the relational databases I've interacted with before. Things like "tags" and "categories" appear to be either objects or arrays (or arrays of objects 🤷🏻‍♀️ ?). I'd like those to display, as well as offer a method to filter to a specific category of posts. My rabid audience _demands_ this convenience.
 
 - Integrate a system that allows for content to be shared across multiple platforms simultaneously, perhaps ITTT (If That Then This, an automation platform) will work, although I've never tried it with LinkedIn.
 
