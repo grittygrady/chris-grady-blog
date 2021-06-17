@@ -24,7 +24,7 @@ I don't want to have to edit the code for my portfolio multiple times a week for
 
 ## 🧐 The Solution
 
-A Content Management System! I've never worked with one before, it was never touched upon in my curriculum at Thinkful, so this was an excellent opportunity to give it a whirl. I've decided to try [Sanity.io](https://www.sanity.io/), as I plan on deploying to Netlify, and using their CMS may be **too** easy, and not refelective of future on the job challenges. I considered Wordpress for the sake of its prevalence as legacy software, but the scope of learning that topic seems a bit large at the moment, and I'd like to get this off the ground quicly.
+A Content Management System! I've never worked with one before, it was never touched upon in my curriculum at Thinkful, so this was an excellent opportunity to give it a whirl. I've decided to try [Sanity.io](https://www.sanity.io/), as I plan on deploying to Netlify, and using their CMS may be **too** easy, and not refelective of future on the job challenges. I considered Wordpress for the sake of its prevalence as legacy software, but the scope of learning that topic seems a bit large at the moment, and I'd like to get this off the ground quickly.
 
 ## 🧠 Lessons Learned
 
@@ -60,4 +60,4 @@ A Content Management System! I've never worked with one before, it was never tou
 
 - Integrate a system that allows for content to be shared across multiple platforms simultaneously, perhaps ITTT (If That Then This, an automation platform) will work, although I've never tried it with LinkedIn.
 
-- The Sanity.io platform currently generates a slug based upon the title of the blog post. This should really be a UUID, as I don't knw how Sanity will handle multiple identical slugs - Note to self - _Try duplicate titles._
+- The Sanity.io platform currently generates a slug based upon the title of the blog post. This should really be a UUID, as I don't know how Sanity will handle multiple identical slugs - Note to self - _Try duplicate titles._

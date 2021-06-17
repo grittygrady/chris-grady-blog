@@ -43,17 +43,25 @@ const SinglePost = () => {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main className='bg-pink-100 min-h-screen p-6'>
+    <main className='bg-gray-900 min-h-screen p-6'>
       <article className='container shadow-lg mx-auto bg-gray-900 rounded-lg'>
         <header className='relative'>
-          <div className='absolute h-full w-full flex items-center justify-center p-4'>
-            <div className='bg-white bg-opacity-75 rounded p-8'>
+          <div className='absolute h-full w-full flex items-center justify-center p-2'>
+            <div className='bg-white bg-opacity-75 rounded p-2'>
               <h1 className='decorative text-3xl lg:text-6xl mb-2'>
                 {singlePost.title}
               </h1>
               <h3>{singlePost.subtitle}</h3>
               <div>
-                <p>{singlePost.tags}</p>
+                {singlePost.tags.map((tag, idx) => (
+                  <span
+                    className='mx-1 px-1 bg-pink-400 text-xs text-gray-900 rounded-xl'
+                    key={idx}
+                  >
+                    {tag}
+                  </span>
+                ))}
+
                 <p>{new Date(singlePost.publishedAt).toLocaleDateString()}</p>
               </div>
             </div>
@@ -65,7 +73,7 @@ const SinglePost = () => {
             style={{ height: '400px' }}
           />
         </header>
-        <div className='px-1 lg:px-48 py-1 lg:py-20 prose lg:prose-xl bg-blue-200 max-w-full'>
+        <div className='px-1 lg:px-48 py-1 lg:py-20 prose lg:prose-xl bg-blue-200 rounded-lg max-w-full'>
           <BlockContent
             blocks={singlePost.body}
             projectId='3t2agff2'
