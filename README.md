@@ -61,3 +61,5 @@ A Content Management System! I've never worked with one before, it was never tou
 - Integrate a system that allows for content to be shared across multiple platforms simultaneously, perhaps ITTT (If That Then This, an automation platform) will work, although I've never tried it with LinkedIn.
 
 - The Sanity.io platform currently generates a slug based upon the title of the blog post. This should really be a UUID, as I don't know how Sanity will handle multiple identical slugs - Note to self - _Try duplicate titles._
+
+- Decide how to order the projects page - check Posts.js for how to assemble the query. Will want to alter the order as I add more projects.

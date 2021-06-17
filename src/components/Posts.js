@@ -8,7 +8,9 @@ const Posts = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "post"]{
+        // order results by multiple attributes
+
+        `*[_type == "post"] | order(publishedAt desc){
         title,
         subtitle,
         slug,
@@ -25,6 +27,7 @@ const Posts = () => {
       }`
       )
       .then((data) => setPostData(data))
+      .then(console.log(postData))
       .catch(console.error);
   }, []);
 
@@ -40,14 +43,14 @@ const Posts = () => {
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {postData &&
             postData.map((post, idx) => (
-              <article key={post.slug}>
+              <article key={post.slug.current}>
                 <Link
                   to={'/posts/' + post.slug.current}
                   key={post.slug.current}
                 >
                   <span
                     className='block h-40 relative rounded-xl shadow-xl leading-snug bg-pink-200 border-blue-400'
-                    key={idx}
+                    key={post.slug.current}
                   >
                     <img
                       src={post.mainImage.asset.url}
