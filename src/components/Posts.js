@@ -8,8 +8,6 @@ const Posts = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        // order results by multiple attributes
-
         `*[_type == "post"] | order(publishedAt desc){
         title,
         subtitle,
@@ -27,9 +25,19 @@ const Posts = () => {
       }`
       )
       .then((data) => setPostData(data))
-      .then(console.log(postData))
       .catch(console.error);
   }, []);
+
+  console.log(postData);
+
+  const determineCategory = (catId) => {
+    if (catId === '4853bfbe-01f8-4e10-b45d-9f5a36596c44') {
+      return 'Coding';
+    } else if (catId === '718899ac-399d-4712-93d2-a0557556f93a') {
+      return 'Music';
+    }
+    return null;
+  };
 
   return (
     <main className='bg-gray-900 text-pink-100 min-h-screen p-5'>
@@ -64,11 +72,17 @@ const Posts = () => {
                       <h4 className='text-pink-100 text-sm bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
                         {post.subtitle}
                       </h4>
-
                       <div className='relative'>
+                        {post.categories.map((category, idx) => (
+                          <span className='block my-1' key={idx}>
+                            <div className='mx-1 inline-block  p-1 bg-blue-400 text-sm text-gray-900 rounded'>
+                              {determineCategory(category._ref).toUpperCase()}
+                            </div>
+                          </span>
+                        ))}
                         {post.tags.map((tag, idx) => (
                           <span
-                            className='inline-block mx-1 my-2 p-1 bg-pink-400 text-xs text-gray-900 rounded'
+                            className='inline-block mx-1 p-1 bg-pink-400 text-xs text-gray-900 rounded'
                             key={idx}
                           >
                             {tag}

@@ -1,4 +1,4 @@
-# ComiCombat
+# Oh My Blog!
 
 <!-- <img src="https://github.com/grittygrady/ComiCombat/blob/master/src/images/ComicombatBanner.png?raw=true"> -->
 
@@ -43,6 +43,8 @@ A Content Management System! I've never worked with one before, it was never tou
 - GROQ
 
   > Blah blah so many different knex, PostgreSQL, blah blah
+
+  > One element of GROQ is the "Category" reference. It assigns what appears to be a 16 digit value, possibly a hash of the string for the category title, it is consistent across posts. I think in order to display the names of categories, I'll have to add conditional checks for `post.categories[0]._ref` or the like
 
 ## 💾 Tech Used
 
