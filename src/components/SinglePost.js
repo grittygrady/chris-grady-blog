@@ -47,8 +47,8 @@ const SinglePost = () => {
       <article className='container shadow-lg mx-auto bg-gray-900 rounded-lg'>
         <header className='relative'>
           <div className='absolute h-full w-full flex items-center justify-center p-2'>
-            <div className='bg-white bg-opacity-75 rounded p-2'>
-              <h1 className='decorative text-3xl lg:text-6xl mb-2'>
+            <div className='bg-white bg-opacity-80 md:bg-opacity-75 rounded p-2'>
+              <h1 className='decorative text-2xl lg:text-6xl mb-1 md:mb-2'>
                 {singlePost.title}
               </h1>
               <h3>{singlePost.subtitle}</h3>

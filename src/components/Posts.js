@@ -40,15 +40,15 @@ const Posts = () => {
   };
 
   return (
-    <main className='bg-gray-900 text-pink-100 min-h-screen p-5'>
-      <section className='container mx-auto'>
-        <h1 className='text-2xl flex justify-center decorative text-blue-400'>
-          BLog pOsTs PAgE
+    <main className='bg-gray-900 text-pink-100 min-h-screen p-5 md:p-12'>
+      <section className='container mx-auto md:mx-18'>
+        <h1 className='text-3xl  md:text-7xl lg:text-8xl flex justify-center decorative text-blue-400'>
+          BLog pOsTs
         </h1>
-        <h2 className='flex justify-center text-md text-blue-400 mb-6'>
+        <h2 className='flex justify-center text-md md:text-3xl text-blue-400 mb-6'>
           Peer Inside My Poor Brain
         </h2>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16'>
           {postData &&
             postData.map((post, idx) => (
               <article key={post.slug.current}>
@@ -66,10 +66,10 @@ const Posts = () => {
                       className='h-full w-full rounded object-cover absolute'
                     />
                     <span className='block relative h-full flex flex-col justify-end px-2 pb-4 mx-auto'>
-                      <h3 className='text-pink-100 text-lg font-bold px-3 py-1 bg-gray-900 bg-opacity-75 rounded-t-lg'>
+                      <h3 className='text-pink-100 text-lg font-bold px-2 py-1 bg-gray-900 bg-opacity-75 rounded-t-lg leading-tight'>
                         {post.title}
                       </h3>
-                      <h4 className='text-pink-100 text-sm bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
+                      <h4 className='text-pink-100 text-xs md:text-sm bg-gray-900 bg-opacity-75 px-3 py-1 rounded-b-lg'>
                         {post.subtitle}
                       </h4>
                       <div className='relative'>
