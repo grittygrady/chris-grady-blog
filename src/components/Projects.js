@@ -30,14 +30,16 @@ const Projects = () => {
   }, []);
 
   return (
-    <main className='bg-gray-900 text-pink-100 min-h-screen p-5'>
-      <section className='container mx-auto'>
-        <h1 className='text-2xl flex justify-center decorative text-blue-400'>
-          My ProJectS
-        </h1>
-        <h2 className='flex justify-center text-md text-blue-400 mb-6'>
-          Learning via Error since 1983
-        </h2>
+    <main className='bg-gray-900 text-pink-100 min-h-screen p-5 md:p-12'>
+      <section className='container mx-auto md:mx-18'>
+        <div className='bg-blue-400 bg-opacity-80 rounded-lg lg:w-3/4 mx-auto'>
+          <h1 className='text-3xl  md:text-7xl lg:text-8xl flex justify-center decorative text-gray-900 md:pb-2'>
+            My ProJectS
+          </h1>
+          <h2 className='flex justify-center text-md md:text-3xl text-gray-900 mb-6 pb-2'>
+            Learning via Error since 1983
+          </h2>
+        </div>
         <section className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {projectData &&
             projectData.map((project, idx) => (
