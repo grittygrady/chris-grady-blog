@@ -13,10 +13,12 @@ const About = () => {
               not limited to:{' '}
             </p>
             <ul className='ml-2  text-md px-8'>
-              <li className='md:py-3'>A case of sparkling water a day.</li>
-              <li className='md:py-3'>The Simpsons. Even the bad episodes.</li>
-              <li className='md:py-3'>Raspberry Pi.</li>
-              <li className='md:py-3'>
+              <li className='py-1 md:py-3'>A case of sparkling water a day.</li>
+              <li className='py-1 md:py-3'>
+                The Simpsons. Even the bad episodes.
+              </li>
+              <li className='py-1 md:py-3'>Raspberry Pi.</li>
+              <li className='py-1 md:py-3'>
                 Graphic novels - don't you{' '}
                 <span className='font-bold'>dare</span> call them comic books
               </li>

@@ -10,28 +10,28 @@ const Navbar = () => {
           to='/'
           exact
           activeClassName='text-blue-500'
-          className='text-blue-400 text-4xl bold hover:text-pink-500 decorative  pl-2 py-1 md:text-5xl w-1/2'
+          className='text-blue-400 text-4xl bold hover:text-pink-500 decorative pl-2 py-1  md:text-6xl md:pl-8 w-1/2'
         >
           Chris Grady
         </NavLink>
-        <div className='inline-flex flex-col items-end px-3 py-1 w-1/2'>
+        <div className='inline-flex flex-col items-end px-3 py-1 w-1/2 md:mr-6'>
           <NavLink
             to='/posts'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 filter shadow-2xl'
+            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
             activeClassName='bg-blue-400'
           >
             Blog Posts
           </NavLink>
           <NavLink
             to='/projects'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1'
+            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
             activeClassName='bg-blue-400'
           >
             Projects
           </NavLink>
           <NavLink
             to='/about'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1'
+            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
             activeClassName='bg-blue-400'
           >
             About Me
