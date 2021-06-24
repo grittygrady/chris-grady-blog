@@ -1,12 +1,21 @@
+import candySkull from '../images/profilecandyskull.jpg';
+
 const About = () => {
   return (
     <div className='bg-drowningPic bg-center md:min-h-screen bg-cover py-16 '>
       <section className='container px-2 mx-auto flex  '>
         <div className='bg-pink-500 bg-opacity-75 rounded p-4 mx-4 mt-0 '>
           <div className='flex flex-col'>
-            <h1 className='decorative bg-gray-900 bg-opacity-90 rounded-lg text-blue-400 text-3xl text-center p-3 md:text-8xl'>
-              Chris <span className='decorative text-pink-600'>GraDy</span>
-            </h1>
+            <div className='flex flex-col lg:flex-row justify-evenly align-center'>
+              <img
+                src={candySkull}
+                alt='candy skull representing my insanity'
+                className='object-cover rounded-2xl mb-2 lg:w-1/4'
+              />
+              <h1 className='decorative bg-gray-900 bg-opacity-90 rounded-lg text-blue-400 text-3xl lg:text-9xl text-center p-3 md:text-8xl lg:w-7/12'>
+                Chris <span className='decorative text-pink-600'>GraDy</span>
+              </h1>
+            </div>
 
             <p className='text-gray-900 p-6 text-lg md:text-3xl'>
               90s obsessed. Retro gaming. Punk rock. Jazz. Coding. Guitar.
