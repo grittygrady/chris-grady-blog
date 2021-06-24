@@ -42,7 +42,7 @@ const Posts = () => {
   return (
     <main className='bg-gray-900 text-pink-100 min-h-screen p-5 md:p-12'>
       <section className='container mx-auto md:mx-18'>
-        <div className='bg-blue-400 bg-opacity-80 rounded-lg'>
+        <div className='bg-blue-400 bg-opacity-80 rounded-lg lg:w-3/4 mx-auto'>
           <h1 className='text-3xl  md:text-7xl lg:text-8xl flex justify-center decorative text-gray-900 md:pb-2'>
             BLog pOsTs
           </h1>
