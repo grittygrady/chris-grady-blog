@@ -36,6 +36,8 @@ A Content Management System! I've never worked with one before, it was never tou
 
   > When using a styling library (for this I used TailwindCSS), mobile first view becomes particularly important, because these tools allow one to put together an impressive page quickly, with animations / pre-built components, etc; however, it's quite easy to paint yourself into a corner when you first put your beautiful desktop site into mobile view and nearly have an aneurysm.
 
+  > Also of note, when using a package such as `React-Social-Icons`, make sure it will fit all use cases BEFORE using. In this case React-Social-Icons` has no way to scale size based on media queries. Dug thrpugh dpcumentation to no avail. Very disappointing, but a good lesson. Decided to go with good ol' Font Awesome. Lightweight CDN.
+
 - Tree Shaking
 
   > Yeah write about that bundle size optimization
@@ -53,6 +55,7 @@ A Content Management System! I've never worked with one before, it was never tou
 - GROQ Query Language
 - TailwindCSS
 - Deployed via Netlify
+- React-Social-Icons (for v1)
 
 ## 🔮 Next Steps
 

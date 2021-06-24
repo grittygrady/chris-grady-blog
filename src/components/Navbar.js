@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
 
 const Navbar = () => {
   return (
     <header className='bg-pink-600'>
-      <nav className='flex justify-between items-center bg-gray-900'>
+      <nav className='flex justify-between items-center bg-gray-900 md:py-4'>
         <NavLink
           to='/'
           exact
@@ -17,21 +16,21 @@ const Navbar = () => {
         <div className='inline-flex flex-col items-end px-3 py-1 w-1/2 md:mr-6'>
           <NavLink
             to='/posts'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
+            className='text-pink-200 hover:text-pink-500 rounded py-0.5 px-1 md:text-3xl md:p-2'
             activeClassName='bg-blue-400'
           >
             Blog Posts
           </NavLink>
           <NavLink
             to='/projects'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
+            className='text-pink-200 hover:text-pink-500 rounded py-0.5 px-1 md:text-3xl md:p-2'
             activeClassName='bg-blue-400'
           >
             Projects
           </NavLink>
           <NavLink
             to='/about'
-            className='text-pink-200 hover:text-pink-500 rounded p-y-0.5 px-1 md:text-3xl'
+            className='text-pink-200 hover:text-pink-500 rounded py-0.5 px-1 md:text-3xl md:p-2'
             activeClassName='bg-blue-400'
           >
             About Me
@@ -39,31 +38,46 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className='bg-pink-600 flex justify-evenly mx-auto py-2 md:py-1'>
-        <SocialIcon
-          url='https://github.com/grittygrady'
-          className='mr-4'
+      <div className='bg-pink-600 flex justify-evenly mx-auto py-2 md:py-6'>
+        <a
+          href='https://github.com/grittygrady'
+          className='rounded-full '
           target='_blank'
           rel='noopener noreferrer'
-          fgColor='#fce7f3'
-          style={{ height: 30, width: 30 }}
-        />
-        <SocialIcon
-          url='https://www.instagram.com/gradythe80sbaby/'
-          className='mr-4'
+        >
+          <button
+            className='bg-blue-400 flex justify-center items-center h-8 w-8 rounded-full outline-none mr-2 p-3 md:h-16 md:w-16 md:text-4xl'
+            type='button'
+          >
+            <i className='flex fab fa-github'></i>
+          </button>
+        </a>
+        <a
+          href='https://www.instagram.com/gradythe80sbaby/'
+          className='rounded-full'
           target='_blank'
           rel='noopener noreferrer'
-          fgColor='#fce7f3'
-          style={{ height: 30, width: 30 }}
-        />
-        <SocialIcon
-          url='https://www.linkedin.com/in/gradychristopher/'
-          className='mr-4'
+        >
+          <button
+            className='bg-blue-400 flex justify-center items-center h-8 w-8 md:h-16 md:w-16 md:text-4xl  rounded-full outline-none mr-2 p-3'
+            type='button'
+          >
+            <i className='flex fab fa-instagram'></i>
+          </button>
+        </a>
+        <a
+          href='https://www.linkedin.com/in/gradychristopher/'
+          className='rounded-full'
           target='_blank'
           rel='noopener noreferrer'
-          fgColor='#fce7f3'
-          style={{ height: 30, width: 30 }}
-        />
+        >
+          <button
+            className='bg-blue-400 flex justify-center items-center h-8 w-8  rounded-full outline-none mr-2 p-3 md:h-16 md:w-16 md:text-4xl'
+            type='button'
+          >
+            <i className='flex fab fa-linkedin-in'></i>
+          </button>
+        </a>
       </div>
     </header>
   );

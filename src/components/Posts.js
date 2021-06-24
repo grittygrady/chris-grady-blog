@@ -42,12 +42,14 @@ const Posts = () => {
   return (
     <main className='bg-gray-900 text-pink-100 min-h-screen p-5 md:p-12'>
       <section className='container mx-auto md:mx-18'>
-        <h1 className='text-3xl  md:text-7xl lg:text-8xl flex justify-center decorative text-blue-400'>
-          BLog pOsTs
-        </h1>
-        <h2 className='flex justify-center text-md md:text-3xl text-blue-400 mb-6'>
-          Peer Inside My Poor Brain
-        </h2>
+        <div className='bg-blue-400 bg-opacity-80 rounded-lg'>
+          <h1 className='text-3xl  md:text-7xl lg:text-8xl flex justify-center decorative text-gray-900 md:pb-2'>
+            BLog pOsTs
+          </h1>
+          <h2 className='flex justify-center text-md md:text-3xl text-gray-900 mb-6 pb-2'>
+            Peer Inside My Poor Brain
+          </h2>
+        </div>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16'>
           {postData &&
             postData.map((post, idx) => (
