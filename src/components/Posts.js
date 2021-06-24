@@ -69,10 +69,10 @@ const Posts = () => {
                     />
                     <span className='block relative h-full flex flex-col justify-end px-2 pb-4 mx-auto'>
                       <div className='md:mb-6'>
-                        <h3 className='text-pink-100 text-lg md:text-3xl font-bold px-2 py-1 bg-gray-900 bg-opacity-80 rounded-t-lg leading-tight'>
+                        <h3 className='text-pink-100 text-lg md:text-3xl lg:text-2xl  font-bold px-2 py-1 bg-gray-900 bg-opacity-80 rounded-t-lg leading-tight'>
                           {post.title}
                         </h3>
-                        <h4 className='text-pink-100 text-xs md:text-xl bg-gray-900 bg-opacity-80 px-3 py-1 rounded-b-lg'>
+                        <h4 className='text-pink-100 text-xs md:text-xl lg:text-lg bg-gray-900 bg-opacity-80 px-3 py-1 rounded-b-lg'>
                           {post.subtitle}
                         </h4>
                       </div>

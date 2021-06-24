@@ -1,9 +1,9 @@
 const About = () => {
   return (
     <div className='bg-drowningPic bg-center md:min-h-screen bg-cover py-16 '>
-      <section className='container px-2 mx-auto flex justify-end '>
-        <div className='bg-pink-500 bg-opacity-75 rounded p-2 '>
-          <div className='flex flex-col '>
+      <section className='container px-2 mx-auto flex  '>
+        <div className='bg-pink-500 bg-opacity-75 rounded p-4 mx-4 mt-0 '>
+          <div className='flex flex-col'>
             <h1 className='decorative bg-gray-900 bg-opacity-90 rounded-lg text-blue-400 text-3xl text-center p-3 md:text-8xl'>
               Chris <span className='decorative text-pink-600'>GraDy</span>
             </h1>
