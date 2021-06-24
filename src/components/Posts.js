@@ -80,7 +80,7 @@ const Posts = () => {
                         {post.categories.map((category, idx) => (
                           <span className='block my-1' key={idx}>
                             <div className='mx-1 inline-block  p-1 bg-blue-400 text-sm md:text-lg text-gray-900 rounded'>
-                              {determineCategory(category._ref).toUpperCase()}
+                              {determineCategory(category?._ref).toUpperCase()}
                             </div>
                           </span>
                         ))}
