@@ -36,7 +36,7 @@ const Posts = () => {
     } else if (catId === '718899ac-399d-4712-93d2-a0557556f93a') {
       return 'Music';
     }
-    return null;
+    return 'Random';
   };
 
   return (
