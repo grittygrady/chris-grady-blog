@@ -40,13 +40,23 @@ A Content Management System! I've never worked with one before, it was never tou
 
 - Tree Shaking
 
-  > Yeah write about that bundle size optimization
+  > TailwindCSS has an excellent system of "tree shaking"; minifying bundle size by removing unused class names and properties. Absolutely outstanding.
 
 - GROQ
 
-  > Blah blah so many different knex, PostgreSQL, blah blah
+  > A new-to-me, very interesting query syntax. Certainly want to dig into this further.
 
   > One element of GROQ is the "Category" reference. It assigns what appears to be a 16 digit value, possibly a hash of the string for the category title, it is consistent across posts. I think in order to display the names of categories, I'll have to add conditional checks for `post.categories[0]._ref` or the like
+
+- LinkedIn is Awful
+
+  > Alright maybe not awful. But I certainly dislike it. It looks like someone vomited spaghetti code all over the screen. But my real problem is when I attempted to customize my LinkedIn profile, something as simple as uploading a link to my site with a title, description and image, and to "feature" it is not possible without altering your site's metadata. This is _INSANE_ We're talking MySpace level of functionality. If I ever work on a site that atttempts to dethrone this bloated monarch of a professional social network, I'll die on that hill. Anyway, here's the code needed to link photos, etc. Replace `content` with needed details. Image must be hosted on Flickr/ Imgur, etc.
+
+  `<meta name="description" content="_" />
+  <meta name="title" property="og:title" content="_" />
+  <meta property="og:type" content="_" />
+  <meta name="image" property="og:image" content="_" />
+  <meta name="description" property="og:description" content="_" /><meta name="author" content="_" />`
 
 ## 💾 Tech Used
 
